@@ -1,0 +1,323 @@
+*{ 
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; 
+ 
+}
+body {
+    background-color: black;
+    background-image: url(../page/img/teclado.jpeg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    font-family: 'Gelasio', serif;
+    z-index: -1;
+      
+}
+.home-link:hover{
+    border-radius: 5px;
+    background: rgba(255, 255, 255, 0.1);
+    text-align: center;
+    box-shadow: 0 0 10px #ae00ff, 0 0 25px #001eff, 0 0 50px #ae00ff;
+}
+
+.burger{
+    display: none;
+    cursor: pointer;
+    z-index: 10;
+}
+
+.burger div{
+    width: 25px;
+    height: 3px;
+    background-color: rgb(255, 255, 255);
+    margin: 5px;
+    transition: all 0.3s ease;
+}
+
+@media screen and (max-width:1024px){
+    .nav-links{
+        width: 100%;
+    } 
+}
+
+@media screen and (max-width:660px){
+    .nav-links{
+        position: absolute;
+        right: 0px;
+        height: 92vh;
+        top: 0vh;
+        background-color: #000000d3;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 50%;
+        transform: translate(150%);
+        transition: transform 0.5s ease-in;
+
+    }
+    .nav-links li{
+        opacity: 0;
+    }
+    .burger{
+        display: block;
+    }
+
+    .container-box{
+        display: flex;
+        flex-direction: column;
+        
+    }
+
+    section.textos-header{
+        width: 100%;
+       
+    }
+
+    .wrapper{
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    body{
+        background:  linear-gradient(to top, hsla(0, 0%, 0%, 0.808), #000000c6), url(/img/bgmediap.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        overflow-x: hidden;
+    }
+}
+.nav-active{
+    transform: translateX(0%);
+}
+
+@keyframes navLinkFade{
+    from{
+        opacity: 0;
+        transform: translateX(50px);
+    }
+    to{
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+.toggle .linea1{
+    transform: rotate(-45deg) translate(-5px,6px);
+
+}
+.toggle .linea2{
+    opacity: 0;
+    
+}
+.toggle .linea3{
+    transform: rotate(45deg) translate(-5px,-6px);
+}
+
+
+.textos-header h1 {
+    color: rgb(252, 252, 252);
+    justify-content: space-around;
+    text-align: center;
+    margin-top: 4%;
+    font-size: 40px;
+}
+
+.textos-header h2 {
+    color: rgb(255, 255, 255);
+    justify-content: space-around;
+    text-align: center;
+    margin-top: 2%;
+    font-size: 30px;
+}
+
+.container-box{
+    display: flex;
+    position: relative;
+    margin: 50px auto;
+    width: 800px;
+    justify-content: center;
+}
+
+/* From uiverse.io by @abrahamcalsin */
+.plan-card {
+    background: rgba(255, 255, 255, 0.1);
+    border-left: 1px solid rgba(255, 255, 255, 0.1);
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+
+    width: 15rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    padding-top: 10px;
+    padding-bottom: 20px;
+    border-radius: 10px;
+    border-bottom: 4px solid #000446;
+    box-shadow: 0 6px 30px rgba(207, 212, 222, 0.3);
+    font-family: "Poppins", sans-serif;
+   
+   margin: auto;
+   margin-bottom: 30px;
+  }
+  
+  .plan-card h2 {
+    margin-bottom: 15px;
+    font-size: 27px;
+    font-weight: 600;
+  }
+  
+  .plan-card h2 span {
+    display: block;
+    margin-top: -4px;
+    color: #ffffff;
+    font-size: 12px;
+    font-weight: 400;
+  }
+  
+  .etiquet-price {
+    position: relative;
+    background: #38f90290;
+    width: 14.46rem;
+    margin-left: -0.65rem;
+    padding: .2rem 1.2rem;
+    border-radius: 5px 0 0 5px;
+  }
+  
+  .etiquet-price p {
+    margin: 0;
+    padding-top: .4rem;
+    display: flex;
+    font-size: 1.9rem;
+    font-weight: 500;
+  }
+  
+  .etiquet-price p:before {
+    content: "$";
+    margin-right: 5px;
+    font-size: 30px;
+    font-weight: 300;
+  }
+  
+  .etiquet-price p:after {
+    
+    margin-left: 5px;
+    font-size: 15px;
+    font-weight: 300;
+  }
+  
+  .etiquet-price div {
+    position: absolute;
+    bottom: -23px;
+    right: 0px;
+    width: 0;
+    height: 0;
+    border-top: 13px solid #146501;
+    border-bottom: 10px solid transparent;
+    border-right: 13px solid transparent;
+    z-index: -6;
+  }
+  
+  .benefits-list {
+    margin-top: 16px;
+  }
+  
+  .benefits-list ul {
+    padding: 0;
+    font-size: 14px;
+  }
+  
+  .benefits-list ul li {
+    color: #ffffff;
+  
+    margin-bottom: .2rem;
+    list-style:circle;
+    align-items: center;
+    gap: .5rem;
+  }
+  
+  .benefits-list ul li svg {
+    width: .9rem;
+    fill: currentColor;
+  }
+  
+  .benefits-list ul li span {
+    font-weight: 300;
+  }
+  
+  .button-get-plan {
+    display: flex;
+    justify-content: center;
+    margin-top: 1.2rem;
+    background: none;
+  }
+  
+  .button-get-plan a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #00044675;
+    color: #fff;
+    padding: 10px 15px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: .8rem;
+    letter-spacing: .05rem;
+    font-weight: 500;
+    transition: all 0.3s ease;
+  }
+  
+  .button-get-plan a:hover {
+    transform: translateY(-3%);
+    box-shadow: 0 3px 10px rgba(207, 212, 222, 0.9);
+  }
+  
+  .button-get-plan .svg-rocket {
+    margin-right: 10px;
+    width: .9rem;
+    fill: currentColor;
+  }
+
+.wrapper{
+    margin: 50px;
+}
+
+
+footer{
+    background: transparent ;
+    background-size: cover ;
+    background-attachment: fixed;
+    padding: 60px 0 30px 0;
+    margin: auto;
+    overflow: hidden;
+}
+
+.contenedor-footer{
+    display: flex;
+    width: 90%;
+    justify-content: space-evenly;
+    margin: auto;
+    padding-bottom: 50px;
+    border-bottom: 1px solid rgb(0, 229, 255);
+}
+
+.content-foo{
+    text-align: center;
+}
+
+.content-foo h4{
+    color: rgb(255, 255, 255);
+    border-bottom: 3px solid #00ddff8f;
+    margin-bottom: 10px;
+}
+
+.content-foo p{
+    color: rgb(255, 255, 255);
+}
+.titulo-final{
+    text-align: center;
+    font-size: 24px;
+    margin: 20px 0 0 0;
+    color: #919191;
+
+}
+
+
+
+
